@@ -12,6 +12,15 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
+#title {
+  color: white;
+  font-family: 'Comic Sans MS';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: calc(((100vw - 100vh) / 2) - 40px);
+  font-size: 55px; }
+
 #image {
   height: 100vh;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); }
@@ -19,13 +28,13 @@ body {
     position: relative;
     height: 50vh;
     width: 100vh;
-    background-image: url("1.png");
+    background-image: url("./1.png");
     background-size: cover; }
   #image .bottom {
     position: relative;
     height: 50vh;
     width: 100vh;
-    background-image: url("2.png");
+    background-image: url("./2.png");
     background-size: cover; }
 
 .text {
