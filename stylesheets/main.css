@@ -28,13 +28,13 @@ body {
     position: relative;
     height: 50vh;
     width: 100vh;
-    background-image: url("./1.png");
+    background-image: url("/assets/1.png");
     background-size: cover; }
   #image .bottom {
     position: relative;
     height: 50vh;
     width: 100vh;
-    background-image: url("./2.png");
+    background-image: url("/assets/2.png");
     background-size: cover; }
 
 .text {

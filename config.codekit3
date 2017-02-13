@@ -9,27 +9,27 @@
 	],
 "creatorBuild": "25504",
 "files": {
-	"\/1.png": {
+	"\/assets\/1.png": {
 		"ft": 32768,
 		"iS": 3053577,
 		"oA": 0,
-		"oAP": "\/1.png",
+		"oAP": "\/assets\/1.png",
 		"oF": 1,
 		"opt": 1
 		},
-	"\/2.png": {
+	"\/assets\/2.png": {
 		"ft": 32768,
 		"iS": 2982937,
 		"oA": 0,
-		"oAP": "\/2.png",
+		"oAP": "\/assets\/2.png",
 		"oF": 0,
 		"opt": 1
 		},
-	"\/3.JPG": {
+	"\/assets\/3.JPG": {
 		"ft": 16384,
 		"iS": 192354,
 		"oA": 0,
-		"oAP": "\/3.jpg",
+		"oAP": "\/assets\/3.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -13670,35 +13670,35 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
-	"\/main-min.js": {
+	"\/scripts\/main-min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/main-min-min.js",
+		"oAP": "\/scripts\/main-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/main.css": {
+	"\/scripts\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/scripts\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/stylesheets\/main.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/main-min.css",
+		"oAP": "\/stylesheets\/main-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/main.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/main.sass": {
+	"\/stylesheets\/main.sass": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -13706,7 +13706,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/main.css",
+		"oAP": "\/stylesheets\/main.css",
 		"oF": 1,
 		"oS": 0,
 		"uL": 1
