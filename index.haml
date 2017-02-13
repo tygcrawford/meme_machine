@@ -1,10 +1,10 @@
 %html
   %head
-    %link(rel="stylesheet" type="text/css" href="/stylesheets/main.css")
+    %link(rel="stylesheet" type="text/css" href="stylesheets/main.css")
     %link(rel="stylesheet" type="text/css" href="bower_components/Ionicons/css/ionicons.min.css")
     %script(src="bower_components/jquery/dist/jquery.min.js")
-    %script(src="bower_components/html2canvas/build/html2canvas.min.js")
-    %script(src="/scripts/main-min.js")
+    %script(src="bower_components/html2canvas/build/html2canvas.js")
+    %script(src="scripts/main.js")
   %body
     #title The Meme Machine
     #image
@@ -12,5 +12,5 @@
         .text#tp_txt(contentEditable='true') top here
       .bottom
         .text#bt_txt(contentEditable='true') bottom here
-    %img#img_out(src="/assets/3.jpg")
+    %img#img_out(src="assets/3.jpg")
     %a#download Download <span class="ion-arrow-down-b"></span>

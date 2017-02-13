@@ -19,14 +19,10 @@ $(document).ready(function(){
     $("#bt_txt").css("font-size", bt_out);
   });
   $("#download").click(function(){
-    var imgDtUrl;
-
-    html2canvas(document.getElementById("#image") , {
+    html2canvas([document.body], {
       onrendered: function (canvas) {
-          imgDtUrl = canvas.toDataURL('image/png',1.0);
+        document.getElementById("#img_out").src = canvas.toDataURL('image/png',1.0);
       }
     });
-
-    document.getElementById('#img_out').src = imgDtUrl;
   });
 });
