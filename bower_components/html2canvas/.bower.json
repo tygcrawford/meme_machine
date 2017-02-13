@@ -16,6 +16,5 @@
   },
   "_source": "https://github.com/niklasvh/html2canvas.git",
   "_target": "^0.4.1",
-  "_originalSource": "html2canvas",
-  "_direct": true
+  "_originalSource": "html2canvas"
 }

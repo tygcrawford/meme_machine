@@ -11,18 +11,6 @@ function para(i){
   return out;
 }
 
-var toImage = function(y){
-  var imageData;
-
-  html2canvas($(y) , {
-    onrendered: function (canvas) {
-        imageData = canvas.toDataURL('image/png',1.0);
-    }
-  });
-
-  return imageData;
-}
-
 $(document).ready(function(){
   $(".text").keyup(function(){
     var tp_out =  para($("#tp_txt").text().length);
@@ -31,8 +19,14 @@ $(document).ready(function(){
     $("#bt_txt").css("font-size", bt_out);
   });
   $("#download").click(function(){
-    var img = toImage('.image');
+    var imgDtUrl;
 
-    document.body.getElementById('#img_out').src = img;
+    html2canvas(document.getElementById("#image") , {
+      onrendered: function (canvas) {
+          imgDtUrl = canvas.toDataURL('image/png',1.0);
+      }
+    });
+
+    document.getElementById('#img_out').src = imgDtUrl;
   });
 });

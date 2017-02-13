@@ -12,16 +12,16 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
-.image {
+#image {
   height: 100vh;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); }
-  .image .top {
+  #image .top {
     position: relative;
     height: 50vh;
     width: 100vh;
     background-image: url("1.png");
     background-size: cover; }
-  .image .bottom {
+  #image .bottom {
     position: relative;
     height: 50vh;
     width: 100vh;
@@ -35,7 +35,7 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   font-family: 'Impact';
-  font-size: 50px;
+  font-size: 51px;
   color: white;
   text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 0px 3px 0 #000, 3px 0px 0 #000, 0px -3px 0 #000, -3px 0px 0 #000, 3px 3px 3px #000;
   text-transform: uppercase;
@@ -44,6 +44,44 @@ body {
   transition: all 1s; }
   .text:focus {
     outline: none; }
+
+#img_out {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: solid 2px #333;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  margin: 0;
+  border-radius: 20px;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden; }
+
+#download {
+  background: #3498db;
+  cursor: pointer;
+  position: absolute;
+  top: 190px;
+  right: 20px;
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: white;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  #download:hover {
+    background: #2f8cca;
+    box-shadow: 0 0 0 3px white, 0 0 0 6px #2f8cca; }
+  #download:active {
+    background: #2980b9;
+    box-shadow: 0 0 0 4px white, 0 0 0 8px #2980b9; }
+  #download span {
+    margin-left: 5px; }
 
 #tp_txt {
   top: 0; }

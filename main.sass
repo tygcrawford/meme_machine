@@ -6,7 +6,7 @@ body
   justify-content: center
   align-items: center
 
-.image
+#image
   height: 100vh
   box-shadow: 0 0 30px transparentize(#000, 0.4)
   .top
@@ -41,6 +41,47 @@ body
 
   &:focus
     outline: none
+
+#img_out
+  position: absolute
+  width: 150px
+  height: 150px
+  border: solid 2px #333
+  top: 20px
+  right: 20px
+  padding: 0
+  margin: 0
+  border-radius: 20px
+  background-position: center center
+  background-size: cover
+  overflow: hidden
+
+#download
+  background: #3498db
+  cursor: pointer
+  position: absolute
+  top: 190px
+  right: 20px
+  width: 150px
+  padding: 10px 0
+  border-radius: 5px
+  text-align: center
+  font-family: sans-serif
+  font-weight: bold
+  color: white
+  transition: all 0.5s
+
+  &:hover
+    background: mix(#3498db, #2980b9)
+    box-shadow: 0 0 0 3px white, 0 0 0 6px mix(#3498db, #2980b9)
+
+  &:active
+    background: #2980b9
+    box-shadow: 0 0 0 4px white, 0 0 0 8px #2980b9
+
+
+  span
+    margin-left: 5px
 
 #tp_txt
   top: 0
