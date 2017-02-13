@@ -19,9 +19,11 @@ $(document).ready(function(){
     $("#bt_txt").css("font-size", bt_out);
   });
   $("#download").click(function(){
-    html2canvas([document.body], {
+    html2canvas($("#image"), {
       onrendered: function (canvas) {
-        document.getElementById("#img_out").src = canvas.toDataURL('image/png',1.0);
+        //document.body.appendChild(canvas);
+        window.open(canvas.toDataURL('image/png'));
+        //document.getElementById("#img_out").setAttribute("src", canvas.toDataURL('image/png'));
       }
     });
   });

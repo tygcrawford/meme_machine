@@ -347,7 +347,7 @@ function backgroundBoundsFactory( prop, el, bounds, image, imageIndex, backgroun
       }
 
     } else {
-      topPos = parseInt(bgposition[1],10);
+      topPos = isNaN(parseInt(bgposition[1], 10)) ? topPos : parseInt(bgposition[1], 10);
     }
 
     return [left, topPos];
