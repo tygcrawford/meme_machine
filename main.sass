@@ -1,0 +1,49 @@
+body
+  background: #444
+  margin: 0
+  padding: 0
+  display: flex
+  justify-content: center
+  align-items: center
+
+.image
+  height: 100vh
+  box-shadow: 0 0 30px transparentize(#000, 0.4)
+  .top
+    position: relative
+    height: 50vh
+    width: 100vh
+    background:
+      image: url("1.png")
+      size: cover
+  .bottom
+    position: relative
+    height: 50vh
+    width: 100vh
+    background:
+      image: url("2.png")
+      size: cover
+
+.text
+  width: 80%
+  margin-left: 10%
+  position: absolute
+  margin-top: 10px
+  margin-bottom: 10px
+  font:
+    family: 'Impact'
+    size: 51px
+  color: white
+  text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 0px 3px 0 #000, 3px 0px 0 #000, 0px -3px 0 #000, -3px 0px 0 #000, 3px 3px 3px #000
+  text-transform: uppercase
+  text-align: center
+  transition: all 1s
+
+  &:focus
+    outline: none
+
+#tp_txt
+  top: 0
+
+#bt_txt
+  bottom: 0

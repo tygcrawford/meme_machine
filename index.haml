@@ -1,0 +1,15 @@
+%html
+  %head
+    %link(rel="stylesheet" type="text/css" href="main.css")
+    %script(src="bower_components/jquery/dist/jquery.min.js")
+    %script(src="bower_components/html2canvas/build/html2canvas.min.js")
+    %script(src="main.js")
+  %body
+    .image
+      .top
+        .text#tp_txt(contentEditable='true') top here
+      .bottom
+        .text#bt_txt(contentEditable='true') bottom here
+    .prev_down
+      %a#download Download
+      %img#img_out
