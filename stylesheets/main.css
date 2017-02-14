@@ -74,19 +74,18 @@ body {
 
 #download {
   background: #3498db;
-  cursor: pointer;
   position: absolute;
   top: 190px;
   right: 20px;
-  width: 150px;
-  padding: 10px 0;
+  padding: 10px 30px;
   border-radius: 5px;
   text-align: center;
   font-family: sans-serif;
   font-weight: bold;
   color: white;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  text-decoration: none; }
   #download:hover {
     background: #2f8cca;
     box-shadow: 0 0 0 3px white, 0 0 0 6px #2f8cca; }
