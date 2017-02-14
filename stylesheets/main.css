@@ -58,7 +58,7 @@ body {
   .text:focus {
     outline: none; }
 
-#img_out {
+#prvw {
   position: absolute;
   width: 150px;
   height: 150px;

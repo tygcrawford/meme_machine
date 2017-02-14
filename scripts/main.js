@@ -22,8 +22,10 @@ $(document).ready(function(){
     html2canvas($("#image"), {
       onrendered: function (canvas) {
         //document.body.appendChild(canvas);
-        window.open(canvas.toDataURL('image/png'));
-        //document.getElementById("#img_out").setAttribute("src", canvas.toDataURL('image/png'));
+        //window.open(canvas.toDataURL('image/png'));
+        var img = canvas.toDataURL("image/png");
+        document.getElementById("download").href = img;
+        //$("body").append("<img src=" + img + " />");
       }
     });
   });
