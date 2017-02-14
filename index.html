@@ -7,7 +7,10 @@
     <script src='scripts/main.js'></script>
   </head>
   <body>
-    <div id='title'>The Meme Machine</div>
+    <div id='title'>
+      <h1>The Meme Machine</h1>
+      <div id='credits'>by Ty C. and David H.</div>
+    </div>
     <div id='image'>
       <div class='top'>
         <div class='text' contentEditable='true' id='tp_txt'>top here</div>
@@ -16,7 +19,11 @@
         <div class='text' contentEditable='true' id='bt_txt'>bottom here</div>
       </div>
     </div>
-    <img id='prvw' src='assets/3.JPG'>
-    <a download id='download'>Download <span class="ion-arrow-down-b"></span></a>
+    <div id='menu'>
+      <div id='m_title'>Preview</div>
+      <img id='prvw' src='assets/3.JPG'>
+      <div class='btn' id='process'>Process...</div>
+      <a class='btn' download id='download'>Download <span class="ion-arrow-down-b"></span></a>
+    </div>
   </body>
 </html>

@@ -13,17 +13,25 @@ body {
           align-items: center; }
 
 #title {
-  color: white;
-  font-family: 'Comic Sans MS';
   position: absolute;
   top: 20px;
   left: 20px;
   width: calc(((100vw - 100vh) / 2) - 40px);
-  font-size: 55px; }
+  color: white;
+  font-family: 'Comic Sans MS'; }
+  #title h1 {
+    font-size: 55px;
+    margin: 0 0 20px 0; }
+  #title #credits {
+    font-size: 17.5px; }
 
 #image {
   height: 100vh;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); }
+  #image #tp_txt {
+    top: 0; }
+  #image #bt_txt {
+    bottom: 0; }
   #image .top {
     position: relative;
     height: 50vh;
@@ -58,45 +66,60 @@ body {
   .text:focus {
     outline: none; }
 
-#prvw {
+#menu {
   position: absolute;
-  width: 150px;
-  height: 150px;
-  border: solid 2px #333;
   top: 20px;
   right: 20px;
-  padding: 0;
-  margin: 0;
-  border-radius: 20px;
-  background-position: center center;
-  background-size: cover;
-  overflow: hidden; }
-
-#download {
-  background: #3498db;
-  position: absolute;
-  top: 190px;
-  right: 20px;
-  padding: 10px 30px;
-  border-radius: 5px;
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: bold;
-  color: white;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  text-decoration: none; }
-  #download:hover {
-    background: #2f8cca;
-    box-shadow: 0 0 0 3px white, 0 0 0 6px #2f8cca; }
-  #download:active {
-    background: #2980b9;
-    box-shadow: 0 0 0 4px white, 0 0 0 8px #2980b9; }
-  #download span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #menu #m_title {
+    color: white;
+    font-family: "Comic Sans MS";
+    margin-bottom: 5px; }
+  #menu #prvw {
+    width: 200px;
+    height: 200px;
+    border: solid 4px #333;
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    margin: 0;
+    border-radius: 20px;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden; }
+  #menu .btn {
+    background: #3498db;
+    top: 190px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px; }
+    #menu .btn:hover {
+      background: #2f8cca;
+      box-shadow: 0 0 0 3px white, 0 0 0 6px #2f8cca; }
+    #menu .btn:active {
+      background: #2980b9;
+      box-shadow: 0 0 0 4px white, 0 0 0 8px #2980b9; }
+  #menu #download span {
     margin-left: 5px; }
-
-#tp_txt {
-  top: 0; }
-
-#bt_txt {
-  bottom: 0; }

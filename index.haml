@@ -6,11 +6,16 @@
     %script(src="bower_components/html2canvas/build/html2canvas.js")
     %script(src="scripts/main.js")
   %body
-    #title The Meme Machine
+    #title
+      %h1 The Meme Machine
+      #credits by Ty C. and David H.
     #image
       .top
         .text#tp_txt(contentEditable='true') top here
       .bottom
         .text#bt_txt(contentEditable='true') bottom here
-    %img#prvw(src="assets/3.JPG")
-    %a#download(download) Download <span class="ion-arrow-down-b"></span>
+    #menu
+      #m_title Preview
+      %img#prvw(src="assets/3.JPG")
+      #process.btn Process...
+      %a#download.btn(download) Download <span class="ion-arrow-down-b"></span>

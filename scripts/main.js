@@ -18,14 +18,12 @@ $(document).ready(function(){
     $("#tp_txt").css("font-size", tp_out);
     $("#bt_txt").css("font-size", bt_out);
   });
-  $("#download").click(function(){
+  $("#process").click(function(){
     html2canvas($("#image"), {
       onrendered: function (canvas) {
-        //document.body.appendChild(canvas);
-        //window.open(canvas.toDataURL('image/png'));
         var img = canvas.toDataURL("image/png");
         document.getElementById("download").href = img;
-        //$("body").append("<img src=" + img + " />");
+        document.getElementById("prvw").src = img;
       }
     });
   });

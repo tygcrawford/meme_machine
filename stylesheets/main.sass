@@ -7,17 +7,30 @@ body
   align-items: center
 
 #title
-  color: white
-  font-family: 'Comic Sans MS'
   position: absolute
   top: 20px
   left: 20px
   width: calc(((100vw - 100vh) / 2) - 40px)
-  font-size: 55px
+  color: white
+  font-family: 'Comic Sans MS'
+
+  h1
+    font-size: 55px
+    margin: 0 0 20px 0
+
+  #credits
+    font-size: 17.5px
 
 #image
   height: 100vh
   box-shadow: 0 0 30px transparentize(#000, 0.4)
+
+  #tp_txt
+    top: 0
+
+  #bt_txt
+    bottom: 0
+
   .top
     position: relative
     height: 50vh
@@ -56,48 +69,57 @@ body
   &:focus
     outline: none
 
-#prvw
+#menu
   position: absolute
-  width: 150px
-  height: 150px
-  border: solid 2px #333
   top: 20px
   right: 20px
-  padding: 0
-  margin: 0
-  border-radius: 20px
-  background-position: center center
-  background-size: cover
-  overflow: hidden
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
 
-#download
-  background: #3498db
-  position: absolute
-  top: 190px
-  right: 20px
-  padding: 10px 30px
-  border-radius: 5px
-  text-align: center
-  font-family: sans-serif
-  font-weight: bold
-  color: white
-  transition: all 0.5s
-  text-decoration: none
+  #m_title
+    color: white
+    font-family: "Comic Sans MS"
+    margin-bottom: 5px
 
-  &:hover
-    background: mix(#3498db, #2980b9)
-    box-shadow: 0 0 0 3px white, 0 0 0 6px mix(#3498db, #2980b9)
+  #prvw
+    width: 200px
+    height: 200px
+    border: solid 4px #333
+    top: 20px
+    right: 20px
+    padding: 0
+    margin: 0
+    border-radius: 20px
+    background-position: center center
+    background-size: cover
+    overflow: hidden
 
-  &:active
-    background: #2980b9
-    box-shadow: 0 0 0 4px white, 0 0 0 8px #2980b9
+  .btn
+    background: #3498db
+    top: 190px
+    right: 20px
+    padding: 10px
+    border-radius: 5px
+    text-align: center
+    font-family: sans-serif
+    font-weight: bold
+    font-size: 16px
+    color: white
+    transition: all 0.5s
+    text-decoration: none
+    cursor: pointer
+    margin-top: 20px
 
+    &:hover
+      background: mix(#3498db, #2980b9)
+      box-shadow: 0 0 0 3px white, 0 0 0 6px mix(#3498db, #2980b9)
 
-  span
-    margin-left: 5px
+    &:active
+      background: #2980b9
+      box-shadow: 0 0 0 4px white, 0 0 0 8px #2980b9
 
-#tp_txt
-  top: 0
-
-#bt_txt
-  bottom: 0
+  #download
+    span
+      margin-left: 5px
