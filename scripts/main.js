@@ -1,6 +1,6 @@
 function para(i){
   var out = Math.abs(i);
-  out = Math.pow(1.04, out);
+  out = Math.pow(1.05, out);
   out = -1 * out;
   out = out + 52;
 
